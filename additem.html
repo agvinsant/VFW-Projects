@@ -23,9 +23,40 @@
 		</head>
 		<body>
 		<!-- Page body content goes here -->
+    <header>
         <h1>My Honey-Do List</h1>
+    </header>
         <h2>Add A Chore</h2>
-		
+        <!-- This is the start of my options... Starting with the drop down option...-->
+        <label for="Chore"><strong>Chore Type:</strong></label>
+        <br/>
+        <br/>	
+            <select name="Chore" id="chore" size="3" multiple="multiple">
+ 				<option value="0" selected="selected"></option>
+ 				<option value="inside">Inside</option>
+ 				<option value="outside">Outside</option>
+ 				<option value="errand">Errand</option>
+			</select>
+         <h2>Chore Info:</h2>
+         <br/>
+  
+    <div><!-- input fields-->
+         <label>Name: <input type="text" name="chorename" id="chorename" value="" size="20" maxlength="50"></label>
+      	  <br/>
+            <!-- Radio selections-->
+          <p>Is this chore Urgent?</p>
+          <label><input type="radio" name="container" value="Yes"/>Yes</label>
+          <label><input type="radio" name="container" value="No"/>No</label>
+	
+    </div>   
+    <!-- Seperate div tags for text field-->
+     <div>
+         <p>Chore Notes:</p>
+         <textarea name="Chore Notes" cols="40" rows="6"></textarea>
+     </div>
+     <!--Buttons-->
+     <input type="submit" name="submitbutton" id="submitbutton" value="Submit Chore" />   
+	 <input type="reset" name="resetbutton" id="resetbutton" value="Clear Form" />	
 		</body>
 
 </html>
