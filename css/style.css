@@ -5,17 +5,21 @@
 /* Project 1 */
 
 html {
-	background-color: #F90;
+	background-color: #BBB;
+	background-size:auto;
 }
-h1 {
+header {
+	background-color:#555;
+	background-size:auto;
+}
+h1{
 	text-align:center;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:"Comic Sans MS", cursive;
 	color:#EEEEEE;
-	
 }
 p {
 	text-align:center;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:"Comic Sans MS", cursive;
 	color:#EEEEEE;
 }
 img.cta {

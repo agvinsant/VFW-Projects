@@ -5,15 +5,16 @@
 /* Project 1 */
 
 html {
-	background-color: #F90;
+	background-color: #BBB
 }
 h1 {
 	text-align:center;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:"Comic Sans MS", cursive;
 	color:#EEEEEE;
+	background-color: #555;
+	
 }
 h2 {
-	text-align:center;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:"Comic Sans MS", cursive;
 	color:#EEEEEE;	
 }

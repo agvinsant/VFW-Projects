@@ -21,42 +21,62 @@
 		<!-- Page title -->
 		<title>Add A Chore</title>
 		</head>
-		<body>
+	<body>
 		<!-- Page body content goes here -->
-    <header>
-        <h1>My Honey-Do List</h1>
-    </header>
-        <h2>Add A Chore</h2>
-        <!-- This is the start of my options... Starting with the drop down option...-->
-        <label for="Chore"><strong>Chore Type:</strong></label>
-        <br/>
-        <br/>	
-            <select name="Chore" id="chore" size="3" multiple="multiple">
- 				<option value="0" selected="selected"></option>
- 				<option value="inside">Inside</option>
- 				<option value="outside">Outside</option>
- 				<option value="errand">Errand</option>
-			</select>
-         <h2>Chore Info:</h2>
-         <br/>
-  
-    <div><!-- input fields-->
-         <label>Name: <input type="text" name="chorename" id="chorename" value="" size="20" maxlength="50"></label>
-      	  <br/>
-            <!-- Radio selections-->
-          <p>Is this chore Urgent?</p>
-          <label><input type="radio" name="container" value="Yes"/>Yes</label>
-          <label><input type="radio" name="container" value="No"/>No</label>
+        <header>
+            <h1>Add A Chore</h1>
+        </header>
+           
+            <!-- This is the start of my options... Starting with the drop down option...-->
+            <form method="post" action="#"    
+                <fieldset>
+                	<legend>Enter Chore Info</legend>
+                    <br/>
+                    <li><label for="choretype">Chore Type:</label></li>
+                    	<select id="choretype">
+                        	<option value="empty">Select type</option>
+                        	<option value="insidejob">Inside Job</option>
+                        	<option value="outsidejob">Outside Job</option>
+                        	<option value="errandrun">Errand Run</option>
+                    	</select>
+                    <br/>
+                    <br/>
+                    <!-- input fields-->
+                    <li><label for="chorename">Name:</label><input type="text" id="chorename" placeholder="Mow Lawn"/></li>
+                    <br/>
+                    
+                    <!-- Radio selections-->
+                    <li>Is this chore Urgent?</li>
+                    <label for="Yes"><input type="radio" name="urgency" value="Yes"/>Yes</label>
+                    <label for="No"><input type="radio" name="urgency" value="No"/>No</label>
+                    <label for="Somewhat"><input type="radio" name="urgency" value="Somewhat"/>Somewhat</label>
+                    <br/>
+                    <br/>
+                    <li><label for="finishby">Finish By:<input type="date" id="finishby"/></label></li>
+                    <br/>
+                    <li>Chore Difficulty</li>
+                    <label for="difficulty">Easy<input type="range" id="difficulty"/>Hard</label>
+                    <br/>
+                    <br/>
+                    <li>Chore Notes:</li>
+                    <textarea name="Chore Notes" placeholder="Type Notes Here" ></textarea>
+                </fieldset>   
+                    <br/>
+                    <!--Buttons-->
+                    <input type="submit" name="submitbutton" id="submitbutton" value="Submit Chore" />   
+                    <input type="reset" name="resetbutton" id="resetbutton" value="Clear Form" />
+                   
+                    <!-- hidden tags, really don't know what to put, I just know it was a requirement :) -->
+                    <input type="hidden" value="true"/> 
+                    <br/>
+                    <br/>
+                    <a href="#">Display All Chores</a>
+                    <a href="#">Clear All Chores</a>	
+            	
+            </form>
+       
 	
-    </div>   
-    <!-- Seperate div tags for text field-->
-     <div>
-         <p>Chore Notes:</p>
-         <textarea name="Chore Notes" cols="40" rows="6"></textarea>
-     </div>
-     <!--Buttons-->
-     <input type="submit" name="submitbutton" id="submitbutton" value="Submit Chore" />   
-	 <input type="reset" name="resetbutton" id="resetbutton" value="Clear Form" />	
-		</body>
+    
+    </body>
 
 </html>
