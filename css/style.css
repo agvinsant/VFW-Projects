@@ -5,25 +5,62 @@
 /* Project 1 */
 
 html {
-	background-color: #BBB;
-	background-size:auto;
+	background-image: linear-gradient(bottom, rgb(232,137,35) 41%, rgb(224,217,76) 80%);
+	background-image: -o-linear-gradient(bottom, rgb(232,137,35) 41%, rgb(224,217,76) 80%);
+	background-image: -moz-linear-gradient(bottom, rgb(232,137,35) 41%, rgb(224,217,76) 80%);
+	background-image: -webkit-linear-gradient(bottom, rgb(232,137,35) 41%, rgb(224,217,76) 80%);
+	background-image: -ms-linear-gradient(bottom, rgb(232,137,35) 41%, rgb(224,217,76) 80%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.41, rgb(232,137,35)),
+		color-stop(0.8, rgb(224,217,76))
+	);
+	background-height: 100%;
 }
 header {
 	background-color:#555;
 	background-size:auto;
 }
-h1{
-	text-align:center;
+body {
+	margin: 10px;
+}
+
+h1 {
+	text-align: center;
 	font-family:"Comic Sans MS", cursive;
 	color:#EEEEEE;
+	background-color: #555;
+	padding: 20px;
+	border:solid 2px white;
+	width: 100%;
 }
+
 p {
 	text-align:center;
 	font-family:"Comic Sans MS", cursive;
 	color:#EEEEEE;
+	font-size: 20px;
+	margin:40px;
 }
 img.cta {
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
+	outline:none;
+	
+}
+div {
+	border: solid black 2px;
+	margin-top: 20px;
+	padding: 20px;	
+	background:#EEEEEE;
+	width: 100%;
+	height:auto;
+}
+
+p {
+	background:#555555;
 }

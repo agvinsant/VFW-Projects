@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="css/style2.css" type="text/css" />
 		<!-- Page title -->
 		<title>Add A Chore</title>
-		</head>
+	</head>
 	<body>
 		<!-- Page body content goes here -->
         <header>
@@ -32,34 +32,28 @@
                 <fieldset>
 					<legend>Enter Chore Info</legend>
                     <br/>
-                    <li><label for="choretype">Chore Type:</label></li>
+                    <label for="choretype">Chore Type:</label>
                     	<select id="choretype">
-                        	<option value="empty">Select type</option>
-                        	<option value="insidejob">Inside Job</option>
-                        	<option value="outsidejob">Outside Job</option>
-                        	<option value="errandrun">Errand Run</option>
+                        	<option id="blank" value="empty">Select type</option>
+                        	<option id="inside" value="insidejob">Inside Job</option>
+                        	<option id="outside" value="outsidejob">Outside Job</option>
+                        	<option id="errand" value="errandrun">Errand Run</option>
                     	</select>
                     <br/>
                     <br/>
                     <!-- input fields-->
-                    <li><label for="chorename">Name:</label><input type="text" id="chorename" placeholder="Mow Lawn"/></li>
-                    <br/>
-                    
-                    <!-- Radio selections-->
-                    <li>Is this chore Urgent?</li>
-			<label for="Yes"><input type="radio" name="urgency" value="Yes"/>Yes</label>
-			<label for="No"><input type="radio" name="urgency" value="No"/>No</label>
-			<label for="Somewhat"><input type="radio" name="urgency" value="Somewhat"/>Somewhat</label>
-                    <br/>
-                    <br/>
-                    <li><label for="finishby">Finish By:<input type="date" id="finishby"/></label></li>
-                    <br/>
-                    <li>Chore Difficulty</li>
-                    <label for="difficulty">Easy<input type="range" id="difficulty"/>Hard</label>
-                    <br/>
-                    <br/>
-                    <li>Chore Notes:</li>
-                    <textarea name="Chore Notes" placeholder="Type Notes Here" ></textarea>
+                     <ul>   
+                        <li><label for="chorename">Name:</label><input type="text" id="chorename" placeholder="Mow Lawn"/></li>
+                        <li>Is this chore Urgent?</li>
+                            <label id="yes" for="Yes"><input type="radio" name="urgency" value="Yes"/>Yes</label>
+                            <label id="no" for="No"><input type="radio" name="urgency" value="No"/>No</label>
+                            <label id="somewhat" for="Somewhat"><input type="radio" name="urgency" value="Somewhat"/>Somewhat</label>
+                        <li><label for="finishby">Finish By:<input type="date" id="finishby"/></label></li>
+                        <li>Chore Difficulty</li>
+                        	<label for="difficulty">Easy<input type="range" id="difficulty"/>Hard</label>
+                        <li>Chore Notes:</li>
+                        	<textarea name="Chore Notes" placeholder="Type Notes Here" ></textarea>
+ 					</ul>               
                 </fieldset>   
                     <br/>
                     <!--Buttons-->
@@ -77,6 +71,6 @@
        
 	
     
-    </body>
+     </body>
 
 </html>
