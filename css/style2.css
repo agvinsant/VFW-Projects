@@ -7,7 +7,7 @@
 html {
 	width: 100%;
 	height:auto;
-	background:#AAAAAA;
+	background:#FF9;
 	overflow:scroll;
 	
 }
@@ -15,9 +15,9 @@ html {
 form {
 	font-family:Arial, Helvetica, sans-serif;
 	padding: 10px;
-	margin: 10px;
-	border:solid black 2px;
-	background:#EEEEEE;
+	margin: 5px;
+	border:solid #f60 2px;
+	background:#ebc85e;
 	
 }
 
@@ -28,14 +28,12 @@ fieldset {
 }
 
 h1 {
-	text-align:center;
+	text-align: center;
 	font-family:"Comic Sans MS", cursive;
-	color:#EEEEEE;
-	background:#555;
+	color:#F60;
+	background-color: #ebc85e;
 	padding: 20px;
-	margin: 0px;
-	border:solid 2px white;
-	
+	border:solid 2px #F60;
 	
 }
 
@@ -44,12 +42,15 @@ h2 {
 	color:#EEEEEE;	
 }
 
-li {
-	font-weight: bold;	
+ul {
+	font-weight: bold
+	color: #ebc85e;	
+	display: block;
+	line-height: 200%;
 }
 
 legend {
 	font-style: italic;
 	font-weight:bold;
-	border: dashed black 2px;	
+	color:#f60
 }
