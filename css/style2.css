@@ -4,47 +4,47 @@
 /* VFW 1207 */
 /* Project 1 */
 
+
 html {
-	width: 100%;
-	height:auto;
-	background:#FF9;
+	background-image:url(../img/honeydobkg.png);
+	background-repeat:repeat-x;
 	overflow:scroll;
-	
 }
 
-form {
-	font-family:Arial, Helvetica, sans-serif;
-	padding: 10px;
+header {
 	margin: 5px;
-	border:solid #f60 2px;
-	background:#ebc85e;
-	
-}
-
-fieldset {
-	padding: 10px;
-	margin: 5px;
-	
+	background-image:url(../img/gradient1.png);
+	border:solid 3px #330099;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 
 h1 {
 	text-align: center;
 	font-family:"Comic Sans MS", cursive;
-	color:#F60;
-	background-color: #ebc85e;
-	padding: 20px;
-	border:solid 2px #F60;
-	
+	color: #0F9;
+	text-shadow:#306 2px 3px 2px;
 }
 
-h2 {
+form {
 	font-family:"Comic Sans MS", cursive;
-	color:#EEEEEE;	
+	padding: 10px;
+	margin: 5px;
+	border:solid 3px #330099;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background-image: url(../img/gradient2.png);
+}
+
+fieldset {
+	padding: 10px;
+	margin: 5px;
 }
 
 ul {
-	font-weight: bold
-	color: #ebc85e;	
+	font-weight: bold;
+	color: #0F9;
+	text-shadow:#306 2px 3px 2px;	
 	display: block;
 	line-height: 200%;
 }
@@ -52,5 +52,7 @@ ul {
 legend {
 	font-style: italic;
 	font-weight:bold;
-	color:#f60
+	color:#0F9;
+	text-shadow:#306 2px 3px 2px;
 }
+
