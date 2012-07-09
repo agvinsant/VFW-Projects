@@ -24,13 +24,16 @@
 	<body>
 		<!-- Page body content goes here -->
         <header>
-            <h1>Add A Chore</h1>
+            <h1>My Honey-Do List</h1>
         </header>
-           
             <!-- This is the start of my options... Starting with the drop down option...-->
-            <form method="post" action="#">   
+            <form method="post" action="#"> 
+            	
+                <a class="display" href="#" >Display All Chores</a><a href="#" class="clear">Clear All Chores</a>
+        		<br/>
+                <br/>
                 <fieldset>
-					<legend>Enter Chore Info</legend>
+					<legend>Add A Chore</legend>
                     <br/>
                     <ul>	
                         <li><label id="chorelabel" for="choretype">Chore Type:</label>
@@ -42,12 +45,12 @@
                     	</select></li>
                     </ul>
                      <ul>   
-                        <li><label for="chorename">Name:</label><input type="text" id="chorename" placeholder="Mow Lawn"/></li>
+                        <li><label for="chorename">Name:</label><input type="text" class="chorename" placeholder="Mow Lawn"/></li>
                         <li>Is this chore Urgent?</li>
                             <label id="yes" for="Yes"><input type="radio" name="urgency" value="Yes"/>Yes</label>
                             <label id="no" for="No"><input type="radio" name="urgency" value="No"/>No</label>
                             <label id="somewhat" for="Somewhat"><input type="radio" name="urgency" value="Somewhat"/>Somewhat</label>
-                        <li><label for="finishby">Finish By:<input type="date" id="finishby"/></label></li>
+                        <li><label for="finishby">Finish By:<input type="date" id="finishby" class="finishby"/></label></li>
                         <li>Chore Difficulty</li>
                         	<label for="difficulty">Easy<input type="range" id="difficulty"/>Hard</label>
                         <li>Chore Notes:</li>
@@ -56,20 +59,17 @@
                 </fieldset>   
                     <br/>
                     <!--Buttons-->
-                    <input type="submit" name="submitbutton" id="submitbutton" value="Submit Chore" />   
-                    <input type="reset" name="resetbutton" id="resetbutton" value="Clear Form" />
+                    <input name="submitbutton" type="submit" class="submit" id="submitbutton" value="Submit Chore" />   
+                    <input name="resetbutton" type="reset" class="reset" id="resetbutton" value="Clear Form" />
                    
                     <!-- hidden tags, really don't know what to put, I just know it was a requirement :) -->
                     <input type="hidden" value="true"/> 
-                    <br/>
-                    <br/>
-                    <a href="#">Display All Chores</a>
-                    <a href="#">Clear All Chores</a>	
-            	
             </form>
        
 	
     
      </body>
-
+     <footer>
+	  <script src=js/main.js type="text/javascript"></script>
+     </footer>
 </html>
