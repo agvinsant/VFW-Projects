@@ -6,31 +6,48 @@
 
 
 html {
-	background-image:url(../img/honeydobkg.png);
-	background-repeat:repeat-x;
+	background:#0F9;
 	overflow:scroll;
 }
 
 header {
 	margin: 5px;
 	background-image:url(../img/gradient1.png);
-	border:solid 3px #330099;
+	border:solid 5px #330099;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 }
 
 h1 {
-	text-align: center;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin: 5px;
+	padding:5px;
+	background-image:url(../img/honeydobkg.png);
 	font-family:"Comic Sans MS", cursive;
-	color: #0F9;
-	text-shadow:#306 2px 3px 2px;
+	font-size:20px;
+	text-decoration:none;
+	color:#005;
+	text-shadow:#0F9 2px 3px 4px;
+	border:#330099 solid 3px;
+	text-align: center;
+	visibility:visable;	
+}
+
+a.index {
+	color:#005;
+	text-decoration:none;	
 }
 
 form {
 	font-family:"Comic Sans MS", cursive;
 	padding: 10px;
 	margin: 5px;
-	border:solid 3px #330099;
+	border:solid 5px #330099;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	background-image: url(../img/gradient2.png);
@@ -40,47 +57,60 @@ fieldset {
 	
 	padding: 10px;
 	margin: 5px;
-	border:#306 solid;
+	border:#330099 solid 5px;
+	background-image:url(../img/honeydobkg.png);
+	
 	
 }
 
 a.display {
-	padding:5px;
-	position:absolute;
-	background:#005;
-	font-family: "Comic Sans MS", cursive;	
-	font-size:inherit;
-	color:#eee;
-	border:#0F9 solid 2px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+	margin-top: 30px;
+	padding: 20px;
+	background-image:url(../img/buttonbkg.png);
+	font-family:"Comic Sans MS", cursive;
+	font-size:20px;
 	text-decoration:none;
+	color:#eee;
+	border:#0F9 solid 5px;
+	text-align: center;
+	visibility:visable;	
 }
 
 a.clear {
-	padding:5px;
-	position:absolute;
-	background:#005;
-	font-family: "Comic Sans MS", cursive;
-	font-size:inherit;
-	color:#eee;
-	border:#0F9 solid 2px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	right:30px;
+	margin-top: 30px;
+	padding: 20px;
+	background-image:url(../img/buttonbkg.png);
+	font-family:"Comic Sans MS", cursive;
+	font-size:20px;
 	text-decoration:none;
+	color:#eee;
+	border:#0F9 solid 5px;
+	text-align: center;
+	visibility:visable;	
 }
 
 ul {
 	font-weight: bold;
-	color: #0F9;
-	text-shadow:#306 2px 3px 2px;	
+	color: #005;
 	display: block;
 	line-height: 200%;
 }
 
 label {
-	display:block;	
+	display:block;
+	font-weight:bold;	
 }
 
 textarea {
@@ -91,35 +121,69 @@ legend {
 	font-style: italic;
 	font-weight:bold;
 	color:#0F9;
-	text-shadow:#306 2px 3px 2px;
-	padding:10px;
+	text-shadow: #EEE 1px 2px 3px;
+	text-transform:uppercase;
+	text-align:center;
+	font-size:20px;
+}
+h2 {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-top: 30px;
+	padding: 20px;
+	background-image:url(../img/buttonbkg.png);
+	font-family:"Comic Sans MS", cursive;
+	font-size:20px;
+	text-decoration:none;
+	color:#eee;
+	border:#0F9 solid 5px;
+	text-align: center;
+	visibility:visable;		
 }
 
 input.submit {
-	padding:5px;
-	background:#005;
-	font-family: "Comic Sans MS", cursive;
-	font-size: inherit;
-	color:#eee;
-	border:#0F9 solid 2px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	 
+	margin-top: 30px;
+	padding: 20px;
+	background-image:url(../img/buttonbkg.png);
+	font-family:"Comic Sans MS", cursive;
+	font-size:20px;
+	text-decoration:none;
+	color:#eee;
+	border:#0F9 solid 5px;
+	text-align: center;
+	visibility:visable;	
+	width:100%;
 }
 
 
 input.reset {
-	padding:5px;
-	position:absolute;
-	right:30px;
-	background: #005;
-	font-family: "Comic Sans MS", cursive;
-	font-size: inherit;
-	color:#eee;
-	border:#0F9 solid 2px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	
+	margin-top: 30px;
+	padding: 20px;
+	background-image:url(../img/buttonbkg.png);
+	font-family:"Comic Sans MS", cursive;
+	font-size:20px;
+	text-decoration:none;
+	color:#eee;
+	border:#0F9 solid 5px;
+	text-align: center;
+	visibility:visable;	
+	width:100%;
 }
 
 select {
@@ -141,8 +205,8 @@ input.finishby {
 }
 
 label.chorelabel {
-	color: #0F9;
-	text-shadow:#306 2px 3px 2px;
+	color: #005;
+	
 }
 textarea.chorenotes {
 		-moz-border-radius: 10px;
@@ -151,6 +215,6 @@ textarea.chorenotes {
 }
 
 p {
-	color:#0F9;
-	text-shadow:#306 2px 3px 2px;
+	color:#005;
 }
+

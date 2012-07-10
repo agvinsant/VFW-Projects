@@ -14,18 +14,34 @@ html {
 header {
 	margin: 5px;
 	background-image:url(../img/gradient1.png);
-	border:solid 3px #330099;
+	border:solid 5px #330099;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	
 }
 
-
 h1 {
-	text-align: center;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin: 5px;
+	padding:5px;
+	background-image:url(../img/honeydobkg.png);
 	font-family:"Comic Sans MS", cursive;
-	color: #0F9;
-	text-shadow:#306 2px 3px 2px;
+	font-size:20px;
+	text-decoration:none;
+	color:#005;
+	text-shadow:#0F9 2px 3px 4px;
+	border:#330099 solid 3px;
+	text-align: center;
+	visibility:visable;	
+}
+
+a.index {
+	color:#005;
+	text-decoration:none;	
 }
 
 p {
@@ -36,17 +52,9 @@ p {
 	margin:10px;
 	text-shadow:#306 2px 3px 2px;
 }
-img.cta {
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	outline:none;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	
-}
+
 div {
-	border:solid 3px #330099;
+	border:solid 5px #330099;
 	margin: 5px;
 	padding: 20px;	
 	background-image:url(../img/gradient2.png);
@@ -63,13 +71,13 @@ a.display {
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	margin-top: 30px;
-	padding: 20px;
-	background:#005;
+	padding: 15px;
+	background-image:url(../img/buttonbkg.png);
 	font-family: "Comic Sans MS", cursive;
 	font-size:30px;
 	text-decoration:none;
 	color:#eee;
-	border:#0F9 solid 2px;
+	border:#0F9 solid 5px;
 	text-align: center;
 	visibility:visable;
 }
@@ -82,13 +90,13 @@ a.addchore {
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	margin-top: 30px;
-	padding: 20px;
-	background:#005;
+	padding: 15px;
+	background-image:url(../img/buttonbkg.png);
 	font-family:"Comic Sans MS", cursive;
 	font-size:30px;
 	text-decoration:none;
 	color:#eee;
-	border:#0F9 solid 2px;
+	border:#0F9 solid 5px;
 	text-align: center;
 	visibility:visable;	
 }
