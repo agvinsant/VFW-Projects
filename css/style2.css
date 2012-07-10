@@ -56,59 +56,7 @@ fieldset {
 	padding: 10px;
 	margin: 5px;
 	border:#330099 solid 5px;
-	background-image:url(../img/honeydobkg.png);
-	
-	
-}
-
-a.display {
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	outline:none;
-	border-radius: 15px;
-	margin-top: 5px;
-	padding: 20px;
-	background-image:url(../img/buttonbkg.png);
-	font-family:"Comic Sans MS", cursive;
-	font-size:20px;
-	text-decoration:none;
-	color:#eee;
-	border:#0F9 solid 5px;
-	text-align: center;	
-}
-
-a.clear {
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	outline:none;
-	border-radius: 15px;
-	margin-top: 5px;
-	padding: 20px;
-	background-image:url(../img/buttonbkg.png);
-	font-family:"Comic Sans MS", cursive;
-	font-size:20px;
-	text-decoration:none;
-	color:#eee;
-	border:#0F9 solid 5px;
-	text-align: center;
-}
-
-ul {
-	font-weight: bold;
-	color: #005;
-	display: block;
-	line-height: 200%;
-}
-
-label {
-	display:block;
-	font-weight:bold;	
-}
-
-textarea {
-	display:block;
+	background-image:url(../img/honeydobkg.png);	
 }
 
 legend {
@@ -132,6 +80,60 @@ legend {
 	color:#eee;
 	border:#0F9 solid 5px;
 	text-align: center;		
+}
+
+select {
+	background:#eee;
+	border-radius:15px;
+}	
+
+ul {
+	font-weight: bold;
+	color: #005;
+	display: block;
+	line-height: 200%;
+}
+
+label {
+	display:block;
+	font-weight:bold;	
+}
+
+
+input.chorename {
+		border-radius: 10px;
+		width:auto;
+}
+
+input.finishby {
+		border-radius: 10px;
+		width:auto;
+}
+
+label.chorelabel {
+	color: #005;
+	
+}
+
+textarea.chorenotes {
+		border-radius: 10px;
+		width:auto;
+}
+
+p {
+	color:#005;
+}
+
+span {
+	font-size:12px;	
+}
+
+input.difficulty {
+	border-radius:15px;
+}
+
+textarea {
+	display:block;
 }
 
 input.submit {
@@ -171,41 +173,37 @@ input.reset {
 	width:100%;
 }
 
-select {
-	background:#eee;
-	border-radius:15px;
-	
+
+a.display {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 15px;
+	margin-top: 5px;
+	padding: 20px;
+	background-image:url(../img/buttonbkg.png);
+	font-family:"Comic Sans MS", cursive;
+	font-size:20px;
+	text-decoration:none;
+	color:#eee;
+	border:#0F9 solid 5px;
+	text-align: center;	
 }
 
-input.chorename {
-		border-radius: 10px;
-		width:auto;
-		
-}
-
-input.finishby {
-		border-radius: 10px;
-		width:auto;
-}
-
-label.chorelabel {
-	color: #005;
-	
-}
-textarea.chorenotes {
-		border-radius: 10px;
-		width:auto;
-}
-
-p {
-	color:#005;
-}
-
-span {
-	font-size:12px;	
-}
-
-input.difficulty {
-	border-radius:15px;
-	
+a.clear {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 15px;
+	margin-top: 5px;
+	padding: 20px;
+	background-image:url(../img/buttonbkg.png);
+	font-family:"Comic Sans MS", cursive;
+	font-size:20px;
+	text-decoration:none;
+	color:#eee;
+	border:#0F9 solid 5px;
+	text-align: center;
 }
