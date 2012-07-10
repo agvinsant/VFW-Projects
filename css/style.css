@@ -15,7 +15,6 @@ header {
 	margin: 5px;
 	background-image:url(../img/gradient1.png);
 	border:solid 3px #330099;
-	-moz-border-radius: 15px;
 	border-radius: 15px;
 }
 
@@ -24,7 +23,6 @@ h1 {
 	margin-left:auto;
 	margin-right:auto;
 	outline:none;
-	-moz-border-radius: 15px;
 	border-radius: 15px;
 	margin: 5px;
 	padding:5px;
@@ -36,7 +34,6 @@ h1 {
 	text-shadow:#0F9 2px 3px 4px;
 	border:#330099 solid 3px;
 	text-align: center;
-	visibility:visable;	
 }
 
 a.index {
@@ -58,7 +55,6 @@ div {
 	margin: 5px;
 	padding: 20px;	
 	background-image:url(../img/gradient2.png);
-	-moz-border-radius: 15px;
 	border-radius: 15px;
 	
 }
@@ -68,7 +64,6 @@ a.display {
 	margin-left:auto;
 	margin-right:auto;
 	outline:none;
-	-moz-border-radius: 15px;
 	border-radius: 15px;
 	margin-top: 30px;
 	padding: 15px;
@@ -79,7 +74,6 @@ a.display {
 	color:#eee;
 	border:#0F9 solid 5px;
 	text-align: center;
-	visibility:visable;
 }
 
 a.addchore {
@@ -87,7 +81,6 @@ a.addchore {
 	margin-left:auto;
 	margin-right:auto;
 	outline:none;
-	-moz-border-radius: 15px;
 	border-radius: 15px;
 	margin-top: 30px;
 	padding: 15px;
@@ -98,5 +91,4 @@ a.addchore {
 	color:#eee;
 	border:#0F9 solid 5px;
 	text-align: center;
-	visibility:visable;	
 }
