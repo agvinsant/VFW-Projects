@@ -14,7 +14,6 @@ header {
 	margin: 5px;
 	background-image:url(../img/gradient1.png);
 	border:solid 3px #330099;
-	
 	border-radius: 15px;
 }
 
@@ -27,11 +26,11 @@ h1 {
 	margin: 5px;
 	padding:5px;
 	background-image:url(../img/honeydobkg.png);
-	font-family:"Comic Sans MS", cursive;
+	font-family:Arial, Helvetica, sans-serif;
 	font-size:20px;
 	text-decoration:none;
 	color:#005;
-	text-shadow:#0F9 2px 3px 4px;
+	text-shadow:#eee 2px 3px 4px;
 	border:#330099 solid 3px;
 	text-align: center;	
 }
@@ -42,7 +41,7 @@ a.index {
 }
 
 form {
-	font-family:"Comic Sans MS", cursive;
+	font-family:Arial, Helvetica, sans-serif;
 	font-size:18px;
 	padding: 10px;
 	margin: 5px;
@@ -54,7 +53,6 @@ form {
 fieldset {
 	
 	padding: 10px;
-	margin: 5px;
 	border:#330099 solid 5px;
 	background-image:url(../img/honeydobkg.png);	
 }
@@ -63,7 +61,7 @@ legend {
 	font-style: italic;
 	font-weight:bold;
 	color:#0F9;
-	text-shadow: #EEE 1px 2px 3px;
+	text-shadow: #005 1px 2px 3px;
 	text-transform:uppercase;
 	text-align:center;
 	display:block;
@@ -71,10 +69,9 @@ legend {
 	margin-right:auto;
 	outline:none;
 	border-radius: 15px;
-	margin-top: 30px;
 	padding: 20px;
 	background-image:url(../img/buttonbkg.png);
-	font-family:"Comic Sans MS", cursive;
+	font-family:Arial, Helvetica, sans-serif;
 	font-size:20px;
 	text-decoration:none;
 	color:#eee;
@@ -85,6 +82,7 @@ legend {
 select {
 	background:#eee;
 	border-radius:15px;
+	width: 75%;
 }	
 
 ul {
@@ -102,12 +100,12 @@ label {
 
 input.chorename {
 		border-radius: 10px;
-		width:auto;
+		width:75%;
 }
 
 input.finishby {
 		border-radius: 10px;
-		width:auto;
+		width:75%;
 }
 
 label.chorelabel {
@@ -117,7 +115,7 @@ label.chorelabel {
 
 textarea.chorenotes {
 		border-radius: 10px;
-		width:auto;
+		width:75%;
 }
 
 p {
@@ -145,7 +143,7 @@ input.submit {
 	margin-top: 5px;
 	padding: 20px;
 	background-image:url(../img/buttonbkg.png);
-	font-family:"Comic Sans MS", cursive;
+	font-family:Arial, Helvetica, sans-serif;
 	font-size:20px;
 	text-decoration:none;
 	color:#eee;
@@ -153,7 +151,7 @@ input.submit {
 	text-align: center;
 	width:100%;
         text-transform: uppercase;
-	text-shadow: #EEE 1px 2px 3px;
+	text-shadow: #005 1px 2px 3px;
 }
 
 
@@ -166,7 +164,7 @@ input.reset {
 	margin-top: 5px;
 	padding: 20px;
 	background-image:url(../img/buttonbkg.png);
-	font-family:"Comic Sans MS", cursive;
+	font-family:Arial, Helvetica, sans-serif;
 	font-size:20px;
 	text-decoration:none;
 	color:#eee;
@@ -174,7 +172,7 @@ input.reset {
 	text-align: center;
 	width:100%;
         text-transform: uppercase;
-	text-shadow: #EEE 1px 2px 3px;
+	text-shadow: #005 1px 2px 3px;
 }
 
 
@@ -187,14 +185,14 @@ a.display {
 	margin-top: 5px;
 	padding: 20px;
 	background-image:url(../img/buttonbkg.png);
-	font-family:"Comic Sans MS", cursive;
+	font-family:Arial, Helvetica, sans-serif;
 	font-size:20px;
 	text-decoration:none;
 	color:#eee;
 	border:#0F9 solid 5px;
 	text-align: center;
         text-transform: uppercase;
-	text-shadow: #EEE 1px 2px 3px;
+	text-shadow: #005 1px 2px 3px;
 }
 
 a.clear {
@@ -206,12 +204,12 @@ a.clear {
 	margin-top: 5px;
 	padding: 20px;
 	background-image:url(../img/buttonbkg.png);
-	font-family:"Comic Sans MS", cursive;
+	font-family:Arial, Helvetica, sans-serif;
 	font-size:20px;
 	text-decoration:none;
 	color:#eee;
 	border:#0F9 solid 5px;
 	text-align: center;
         text-transform: uppercase;
-	text-shadow: #EEE 1px 2px 3px;
+	text-shadow: #005 1px 2px 3px;
 }
