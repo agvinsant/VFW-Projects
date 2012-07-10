@@ -37,33 +37,38 @@ form {
 }
 
 fieldset {
+	
 	padding: 10px;
-	margin: 10px;
+	margin: 5px;
+	border:#306 solid;
+	
 }
 
 a.display {
-	position: absolute;
-	margin: 10px;
-	padding: 10px;
+	padding:5px;
+	position:absolute;
 	background:#005;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans MS", cursive;	
+	font-size:inherit;
 	color:#eee;
 	border:#0F9 solid 2px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+	text-decoration:none;
 }
 
 a.clear {
-	margin: 10px;
-	padding: 10px;
+	padding:5px;
+	position:absolute;
 	background:#005;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans MS", cursive;
+	font-size:inherit;
 	color:#eee;
 	border:#0F9 solid 2px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	right:30px;
-	position:absolute;
+	text-decoration:none;
 }
 
 ul {
@@ -74,49 +79,78 @@ ul {
 	line-height: 200%;
 }
 
+label {
+	display:block;	
+}
+
+textarea {
+	display:block;
+}
+
 legend {
 	font-style: italic;
 	font-weight:bold;
 	color:#0F9;
 	text-shadow:#306 2px 3px 2px;
+	padding:10px;
 }
 
 input.submit {
+	padding:5px;
 	background:#005;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans MS", cursive;
+	font-size: inherit;
 	color:#eee;
 	border:#0F9 solid 2px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	width: 150px;
-	height: 40px;
+	 
 }
 
+
 input.reset {
+	padding:5px;
 	position:absolute;
 	right:30px;
 	background: #005;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: "Comic Sans MS", cursive;
+	font-size: inherit;
 	color:#eee;
 	border:#0F9 solid 2px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	width: 150px;
-	height: 40px;
+	
 }
 
 select {
-	background:#eee;	
+	background:#eee;
+	
 }
 
 input.chorename {
 		-moz-border-radius: 10px;
 		border-radius: 10px;
 		width:auto;
+		
 }
 
 input.finishby {
-			-moz-border-radius: 10px;
+		-moz-border-radius: 10px;
 		border-radius: 10px;
 		width:auto;
+}
+
+label.chorelabel {
+	color: #0F9;
+	text-shadow:#306 2px 3px 2px;
+}
+textarea.chorenotes {
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		width:auto;
+}
+
+p {
+	color:#0F9;
+	text-shadow:#306 2px 3px 2px;
 }

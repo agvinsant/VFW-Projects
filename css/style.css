@@ -54,3 +54,41 @@ div {
 	border-radius: 15px;
 	
 }
+
+a.display {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-top: 30px;
+	padding: 20px;
+	background:#005;
+	font-family: "Comic Sans MS", cursive;
+	font-size:30px;
+	text-decoration:none;
+	color:#eee;
+	border:#0F9 solid 2px;
+	text-align: center;
+	visibility:visable;
+}
+
+a.addchore {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-top: 30px;
+	padding: 20px;
+	background:#005;
+	font-family:"Comic Sans MS", cursive;
+	font-size:30px;
+	text-decoration:none;
+	color:#eee;
+	border:#0F9 solid 2px;
+	text-align: center;
+	visibility:visable;	
+}

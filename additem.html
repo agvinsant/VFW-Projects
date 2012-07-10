@@ -27,36 +27,35 @@
             <h1>My Honey-Do List</h1>
         </header>
             <!-- This is the start of my options... Starting with the drop down option...-->
+         
             <form method="post" action="#"> 
             	
-                <a class="display" href="#" >Display All Chores</a><a href="#" class="clear">Clear All Chores</a>
+                <a class="display" href="#" >Display All</a><a href="#" class="clear">Clear All</a>
         		<br/>
                 <br/>
-                <fieldset>
-					<legend>Add A Chore</legend>
-                    <br/>
-                    <ul>	
-                        <li><label id="chorelabel" for="choretype">Chore Type:</label>
-                    	<select id="choretype">
+                <fieldset>  
+					<legend><h2>*Add A Chore*</h2></legend>
+                    <p>** All fields required</p>
+                    <label id="chorelabel" class="chorelabel" for="choretype">Chore Type:</label>
+                    		<select id="choretype">
                         	<option id="blank" value="empty">Select type</option>
                         	<option id="inside" value="insidejob">Inside Job</option>
                         	<option id="outside" value="outsidejob">Outside Job</option>
                         	<option id="errand" value="errandrun">Errand Run</option>
-                    	</select></li>
-                    </ul>
+                    	</select>
                      <ul>   
-                        <li><label for="chorename">Name:</label><input type="text" class="chorename" placeholder="Mow Lawn"/></li>
-                        <li>Is this chore Urgent?</li>
+                        <li><label for="chorename">Name:</label><input type="text" id="chorename" class="chorename" placeholder="Mow Lawn"/></li>
+                        <li>Is this chore Urgent?
                             <label id="yes" for="Yes"><input type="radio" name="urgency" value="Yes"/>Yes</label>
                             <label id="no" for="No"><input type="radio" name="urgency" value="No"/>No</label>
-                            <label id="somewhat" for="Somewhat"><input type="radio" name="urgency" value="Somewhat"/>Somewhat</label>
+                            <label id="somewhat" for="Somewhat"><input type="radio" name="urgency" value="Somewhat"/>Somewhat</label></li>
                         <li><label for="finishby">Finish By:<input type="date" id="finishby" class="finishby"/></label></li>
-                        <li>Chore Difficulty</li>
-                        	<label for="difficulty">Easy<input type="range" id="difficulty"/>Hard</label>
-                        <li>Chore Notes:</li>
-                        	<textarea name="Chore Notes" placeholder="Type Notes Here" ></textarea>
+                        <li>Chore Difficulty
+                        	<label for="difficulty">Easy<input type="range" id="difficulty"/>Hard</label></li>
+                        <li>Chore Notes:
+                        	<textarea name="Chore Notes" class="chorenotes" id="chorenotes" placeholder="Type Notes Here" ></textarea></li>
  					</ul>               
-                </fieldset>   
+                  </fieldset>
                     <br/>
                     <!--Buttons-->
                     <input name="submitbutton" type="submit" class="submit" id="submitbutton" value="Submit Chore" />   
@@ -64,7 +63,7 @@
                    
                     <!-- hidden tags, really don't know what to put, I just know it was a requirement :) -->
                     <input type="hidden" value="true"/> 
-            </form>
+             </form>
        
 	
     
