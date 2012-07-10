@@ -12,12 +12,22 @@ window.addEventListener("DOMContentLoaded", function(){
 	};
 	
 	// id variables
-	var ct = a('choretype'),
+	var	opt= [blank, inside, outside, errand],
+		ct = a('choretype'),
 		cn = a('chorename'),
 		urg= a('urgent'),
 		fin= a('finishby'),
 		dif= a('difficulty'),
 		notes= a('chorenotes');
+		
+	var displayButton = a('display');
+	displayButton.addEventListener("click", getData);
+	
+	var clearButton = a('clear');
+	clearButton.addEventListener("click", clearLocal);
+	
+	var submitButton = a('submitbutton');
+	submitButton.addEventListener = a("click", storeData);
 	
 		 		
 	
