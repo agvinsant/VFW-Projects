@@ -14,7 +14,7 @@ html {
 header {
 	margin: 5px;
 	background-image:url(../img/gradient1.png);
-	border:solid 5px #330099;
+	border:solid 3px #330099;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 }
@@ -54,7 +54,7 @@ p {
 }
 
 div {
-	border:solid 5px #330099;
+	border:solid #330099 3px;
 	margin: 5px;
 	padding: 20px;	
 	background-image:url(../img/gradient2.png);
