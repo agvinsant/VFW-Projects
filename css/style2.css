@@ -152,6 +152,8 @@ input.submit {
 	border:#0F9 solid 5px;
 	text-align: center;
 	width:100%;
+        text-transform: uppercase;
+	text-shadow: #EEE 1px 2px 3px;
 }
 
 
@@ -171,6 +173,8 @@ input.reset {
 	border:#0F9 solid 5px;
 	text-align: center;
 	width:100%;
+        text-transform: uppercase;
+	text-shadow: #EEE 1px 2px 3px;
 }
 
 
@@ -188,7 +192,9 @@ a.display {
 	text-decoration:none;
 	color:#eee;
 	border:#0F9 solid 5px;
-	text-align: center;	
+	text-align: center;
+        text-transform: uppercase;
+	text-shadow: #EEE 1px 2px 3px;
 }
 
 a.clear {
@@ -206,4 +212,6 @@ a.clear {
 	color:#eee;
 	border:#0F9 solid 5px;
 	text-align: center;
+        text-transform: uppercase;
+	text-shadow: #EEE 1px 2px 3px;
 }
