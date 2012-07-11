@@ -29,15 +29,16 @@
 		</header>
 		    <!-- This is the start of my options... Starting with the drop down option...-->
 		 
-		<form method="post" action="#"> 
-			<br/>
+		<form method="post" action="#" id="choreForm"> 
+			<a class="display" href="#" id="displayButton">Display All Chores</a>
+			<a href="#" class="clear" id="clearButton">Clear All Chores</a>
 			<br/>
 			<fieldset>  
 				<legend>Add A Chore</legend>
 				<p>** All fields required</p>
 				<!--drop down option specifying chore type..-->
 				<label id="chorelabel" class="chorelabel" for="choretype">Chore Type:</label>
-				<select id="choretype">
+				<select id="select">
 					<option id="blank" value="empty">Select type</option>
 					<option id="inside" value="insidejob">Inside Job</option>
 					<option id="outside" value="outsidejob">Outside Job</option>
@@ -60,11 +61,8 @@
 			<br/>
 			<!--Buttons-->
 			<!--Submit and reset-->
-			<input name="submitbutton" type="submit" class="submit" id="submitbutton" value="Submit Chore" />   
-			<input name="resetbutton" type="reset" class="reset" id="resetbutton" value="Clear Form" />
-			<!--Display all, clear all buttons-->
-			<a class="display" href="#" id="display">Display All Chores</a>
-			<a href="#" class="clear" id="clear">Clear All Chores</a>
+			<input name="submitButton" type="submit" class="submit" id="submitButton" value="Submit Chore" />   
+			<input name="resetButton" type="reset" class="reset" id="resetButton" value="Clear Form" />
 			   
 			<!-- hidden tags, really don't know what to put, I just know it was a requirement :) -->
 			<input type="hidden" value="true"/> 
