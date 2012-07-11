@@ -6,7 +6,7 @@
 window.addEventListener("DOMContentLoaded", function() {
     
     // id variables
-    var opt= ["blank", "inside", "outside", "errand"],
+    var opt= ["--Select Chore Type--", "--Inside Job--", "--Outside Job--", "--Errand Run--"],
         urgencyValue;
         
     // getElementById Function
@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", function() {
         var radios = document.forms[0].urgency;
         for(var i=0; i<radios.length; i++) {
             if(radios[i].checked) {
-              var  urgencyValue = radios[i].value;
+                urgencyValue = radios[i].value;
             }
         }
     }
@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	switch(n) {
 		case "on":
 			a('choreForm').style.display = "none";
-			a('clear').style.display = 'inline';
+			a('clearButton').style.display = 'inline';
 			a('displayButton').style.display = 'none';
 			a('addNew').style.display = 'inline';
 			break;
@@ -91,11 +91,13 @@ window.addEventListener("DOMContentLoaded", function() {
         var makeDiv = document.createElement('div');
         makeDiv.setAttribute("id", "items");
         var makeList = document.createElement('ul');
+	makeList.setAttribute("class", "choreList");
         makeDiv.appendChild(makeList);
         document.body.appendChild(makeDiv);
 	a('items').style.display = 'block';
         for (var i=0, len=localStorage.length; i<len; i++) {
             var makeli = document.createElement('li');
+	    makeli.setAttribute("class", "eachChore")
             makeList.appendChild(makeli);
             var key = localStorage.key(i);
             var value = localStorage.getItem(key);
