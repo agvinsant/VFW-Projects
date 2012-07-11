@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", function() {
         
     // Creating Select elements and populate with options
     function makeType () {
-        var     formTag = document.getElementsByTagName("form"),
+        var formTag = document.getElementsByTagName("form"),
             selectLi = a('select'),
             makeSelect = document.createElement('select');
             makeSelect.setAttribute('id', 'choretype');
@@ -86,7 +86,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	toggleControls("on");
 	if(localStorage.length === 0) {
 		alert('There are no chores at this time.');
-	};
+	}
         var makeDiv = document.createElement('div');
         makeDiv.setAttribute("id", "items");
         var makeList = document.createElement('ul');
