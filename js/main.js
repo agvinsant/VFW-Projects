@@ -52,15 +52,16 @@ window.addEventListener("DOMContentLoaded", function() {
 			break;
 		case "off":
 			a('choreForm').style.display = "block";
-			a('clear').style.display = 'inline';
+			a('clearButton').style.display = 'inline';
 			a('displayButton').style.display = 'inline';
 			a('addNew').style.display = 'none';
 			a('items').style.display = 'none';
 			break;
 		default:
-			return;
+			return false;
 	}
     }
+
     
     function storeData() {
         var id = Math.floor(Math.random()*10000001);
@@ -106,7 +107,7 @@ window.addEventListener("DOMContentLoaded", function() {
             for(var n in object) {
                 var makeSubli = document.createElement('li');
                 makeSubList.appendChild(makeSubli);
-                var optSubText = object[n][0] + " "+object[n][1];
+                var optSubText = object[n][0] + " " +object[n][1];
                 makeSubli.innerHTML = optSubText;
             }
             
