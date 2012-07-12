@@ -19,22 +19,21 @@
 		<!-- CSS LINK -->
 		<link rel="stylesheet" href="css/style2.css" type="text/css" />
 		<!-- Page title -->
-		<title>Add A Chore</title>
+		<title>My Honey-Do List</title>
 	</head>
 	<body>
 		<!-- Page body content goes here -->
 		<header>
 		    <!-- I built in a link or home button for myself inside the header to switch back and forth to the index page without having to create a home button --> 
-		    <h1><a href="index.html" id="index" class="index">My Honey-Do List</a></h1>
+		    <h1><a href="index.html" id="index" class="index">Home</a></h1>
+		    <h2><a href="#" class="clear" id="clearButton">Clear All Chores</a></h2>
 		</header>
 		    <!-- This is the start of my options... Starting with the drop down option...-->
 		 
 		<form method="post" action="#" id="choreForm"> 
-			<nav>
-				<a class="display" href="#" id="displayButton">Display All Chores</a>
-				<a href="#" class="clear" id="clearButton">Clear All Chores</a>
-				<a href="additem.html" id="addNew" style="display: none;">Add New Chores</a>
-			</nav>
+			<a class="display" href="#" id="displayButton">Display All Chores</a>
+			
+			<a href="additem.html" class="addNew" id="addNew" style="display: none;">Add New Chores</a>
 			<br/>
 			<fieldset>  
 				<legend>Add A Chore</legend>
@@ -60,7 +59,7 @@
 					</li>
 					<li><label for="finishby" >Finish By: <input type="date" class="finishby" id="finishby"/></label></li>
 					<li>Chore Difficulty: 
-						<label for="difficulty"><span>1</span><input type="range" id="difficulty" class="difficulty" /><span>10</span></label></li>
+						<label for="difficulty"><span>1</span><input type="range" id="difficulty" class="difficulty" /><span>100</span></label></li>
 					<li>Chore Notes:
 						<textarea name="Chore Notes" class="chorenotes" id="chorenotes" placeholder="Type Notes Here" ></textarea></li>
 				</ul>               

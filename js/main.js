@@ -6,7 +6,7 @@
 window.addEventListener("DOMContentLoaded", function() {
     
     // id variables
-    var opt= ["--Select Chore Type--", "--Inside Job--", "--Outside Job--", "--Errand Run--"],
+    var opt= ["--Select Chore Type--", "Inside Job", "Outside Job", "Errand Run"],
         urgencyValue;
         
     // getElementById Function
@@ -46,9 +46,9 @@ window.addEventListener("DOMContentLoaded", function() {
 	switch(n) {
 		case "on":
 			a('choreForm').style.display = "none";
-			a('clearButton').style.display = 'inline';
-			a('displayButton').style.display = 'none';
-			a('addNew').style.display = 'inline';
+			a('clearButton').style.display = "inline";
+			a('displayButton').style.display = "none";
+			a('addNew').style.display = "inline";
 			break;
 		case "off":
 			a('choreForm').style.display = "block";
