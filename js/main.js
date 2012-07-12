@@ -41,26 +41,24 @@ window.addEventListener("DOMContentLoaded", function() {
             }
         }
     }
-    
+    // toggle function that when displayButton is clicked, tells what to display when on and off.
+    // On shows list form, and hides display button. Home and Clear buttons are built into the HTML.
+    // Off means that the additem form is showing.
     function toggleControls(n) {
-	switch(n) {
-		case "on":
-			a('choreForm').style.display = "none";
-			a('clearButton').style.display = "inline";
-			a('displayButton').style.display = "none";
-			a('addNew').style.display = "inline";
-			break;
-		case "off":
-			a('choreForm').style.display = "block";
-			a('clearButton').style.display = 'inline';
-			a('displayButton').style.display = 'inline';
-			a('addNew').style.display = 'none';
-			a('items').style.display = 'none';
-			break;
-		default:
-			return false;
-	}
-    }
+		switch(n) {
+			case "on":
+				a('choreForm').style.display = "none";
+				a('displayButton').style.display = "none";
+				break;
+			case "off":
+				a('choreForm').style.display = "block";
+				a('items').style.display = 'none';
+				break;
+			default:
+				return false;
+}
+}
+
 
     
     function storeData() {
@@ -71,23 +69,27 @@ window.addEventListener("DOMContentLoaded", function() {
         var item= {};
             item.choretype = ["Chore Type:", a('choretype').value];
             item.chorename = ["Chore Name:", a('chorename').value];
-            item.urgency   = ["Is this chore Urgent?:", urgencyValue];
+	    item.finishby  = ["Finish By:", a("finishby").value];
+	    item.urgency   = ["Is this chore Urgent?:", urgencyValue];
             item.difficulty= ["Difficulty:", a('difficulty').value];
-            item.finishby  = ["Finish By:", a("finishby").value];
             item.chorenotes= ["Chore Notes:", a('chorenotes').value];
-            
+        
         // Save data to local storage, use Stringify to convert object to string
         localStorage.setItem(id, JSON.stringify(item));
         alert("Chore Saved!");
             
-    }
+    }    
     
     function getData() {
         //write data from local storage
+	// call the toggleControls function
 	toggleControls("on");
+	// tells function if the data is empty then you will be alerted and will revert back to form with display button missing
 	if(localStorage.length === 0) {
 		alert('There are no chores at this time.');
+		toggleControls("off");
 	}
+	// adding elements into HTML and displaying from JS
         var makeDiv = document.createElement('div');
         makeDiv.setAttribute("id", "items");
         var makeList = document.createElement('ul');

@@ -32,24 +32,16 @@
 		 
 		<form method="post" action="#" id="choreForm"> 
 			<a class="display" href="#" id="displayButton">Display All Chores</a>
-			
-			<a href="additem.html" class="addNew" id="addNew" style="display: none;">Add New Chores</a>
 			<br/>
 			<fieldset>  
 				<legend>Add A Chore</legend>
-				<p>** All fields required</p>
-				<!--<select id="select">
-					<option id="blank" value="empty">Select type</option>
-					<option id="inside" value="insidejob">Inside Job</option>
-					<option id="outside" value="outsidejob">Outside Job</option>
-					<option id="errand" value="errandrun">Errand Run</option>
-				</select>-->
+				<p>** Required Fields</p>
 				<!-- Start of the form list: Name, Urgency, Date to finish, difficulty, chore notes-->
 				<ul>   
 					<!--drop down option specifying chore type..-->
-					<li id="select"><label class="choretype" for="choretype">Chore Type: </label></li>
-					<li><label for="chorename">Name: </label><input type="text" id="chorename" class="chorename" placeholder="Mow Lawn"/></li>
-					
+					<li id="select"><label class="choretype" for="choretype">**Chore Type: </label></li>
+					<li><label for="chorename">**Name: </label><input type="text" id="chorename" class="chorename" placeholder="Mow Lawn"/></li>
+					<li><label for="finishby" >**Finish By: </label><input type="date" class="finishby" id="finishby"/></li>
 					<li><label for="urgency">Is This Chore Urgent?: </label>
 						<ul class="checkbox">
 							<li><label for="yes" ><input type="radio" name="urgency" value="Yes" id="yes"/>Yes</label></li>
@@ -57,7 +49,6 @@
 							<li><label for="somewhat"><input type="radio" name="urgency" value="Somewhat" id="somewhat" />Somewhat</label></li>
 						</ul>
 					</li>
-					<li><label for="finishby" >Finish By: <input type="date" class="finishby" id="finishby"/></label></li>
 					<li>Chore Difficulty: 
 						<label for="difficulty"><span>1</span><input type="range" id="difficulty" class="difficulty" /><span>100</span></label></li>
 					<li>Chore Notes:
