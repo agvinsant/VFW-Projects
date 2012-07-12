@@ -28,7 +28,7 @@ h1 {
 	padding:5px;
 	background-image:url(../img/honeydobkg.png);
         font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
+	font-size:24px;
 	text-decoration:none;
 	color:#005;
 	text-shadow:#0F9 2px 3px 4px;
@@ -50,6 +50,22 @@ h3 {
 	text-shadow:#306 2px 3px 2px;
 }
 
+span {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 15px;
+	margin: 5px;
+	padding:5px;
+	background-image:url(../img/honeydobkg.png);
+        font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	text-decoration:none;
+	color:#005;
+	border:#330099 solid 3px;
+}
+
 p {
 	font-family:Arial, Helvetica, sans-serif;
 	color:#005;
@@ -67,23 +83,6 @@ div {
 	
 }
 
-a.display {
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	outline:none;
-	border-radius: 15px;
-	margin-top: 5px;
-	padding: 15px;
-	background-image:url(../img/buttonbkg.png);
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
-	text-decoration:none;
-	color:#eee;
-	border:#0F9 solid 5px;
-	text-align: center;
-}
-
 a.addchore {
 	display:block;
 	margin-left:auto;
@@ -95,7 +94,7 @@ a.addchore {
 	background-image:url(../img/buttonbkg.png);
         background-size: auto;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size:30px;
+	font-size:20px;
 	text-decoration:none;
         text-shadow:#330099 2px 3px 4px;
 	color:#eee;

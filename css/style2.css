@@ -109,7 +109,7 @@ select {
 }	
 
 ul {
-        font-weight: bold;
+        font-weight: normal;
 	color: #005;
 	line-height: 200%;
 }
