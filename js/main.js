@@ -154,7 +154,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	deleteLink.key = key;
 	var deleteText = "Delete Chore";
 	deleteLink.setAttribute("class", "deleteLink");
-	//deleteLink.addEventListener('click', deleteItem);
+	deleteLink.addEventListener('click', deleteItem);
 	deleteLink.innerHTML = deleteText;
 	linksLi.appendChild(deleteLink);
 	
@@ -197,6 +197,18 @@ window.addEventListener("DOMContentLoaded", function() {
 	editSubmit.key = this.key;
     }
     
+    function deleteItem() {
+	var ask = confirm("Are you sure you want to delete this chore?");
+	if(ask){
+		localStorage.removeItem(this.key);
+		window.location.reload();
+	}else{
+		alert("Chore was not deleted!");
+		window.location.reload();
+		return false;
+	}
+    }
+    
     function clearLocal() {
 	if(localStorage.length === 0) {
 		alert('There is no data to clear.');
@@ -208,6 +220,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	}
     }
     var errMsg = a('errors');
+    errMsg.setAttribute("class", "errMsg");
     function validate(e) {
 	// Defining elements to validate
 	var getChoreType = a('choretype');

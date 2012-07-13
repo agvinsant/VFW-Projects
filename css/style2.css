@@ -293,4 +293,9 @@ a.deleteLink {
 	text-shadow: #005 1px 2px 3px;
 }
 
+#errors {
+    color:red;
+    font-weight: bold;
+}
+
 
