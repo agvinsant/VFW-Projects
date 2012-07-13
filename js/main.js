@@ -1,19 +1,23 @@
 // Adam Vinsant
 // VFW 1207
 // My Honey Do List js file
-// Activity 2
+// Activity 3
 
 window.addEventListener("DOMContentLoaded", function() {
     
-    // id variables
-    var opt= ["--Select Chore Type--", "Inside Job", "Outside Job", "Errand Run"],
+     
+     
+     // id variables
+    var opt= ["Select Chore Type", "Inside Job", "Outside Job", "Errand Run"],
         urgencyValue;
+	
         
     // getElementById Function
     function a(x) {
         var theElement = document.getElementById(x);
         return theElement;
     }
+    
         
     // Creating Select elements and populate with options
     function makeType () {
@@ -56,13 +60,21 @@ window.addEventListener("DOMContentLoaded", function() {
 				break;
 			default:
 				return false;
-}
-}
-
-
+		}
+     }
     
-    function storeData() {
-        var id = Math.floor(Math.random()*10000001);
+    function storeData(key) {
+        // If no key, this is a new item and need new key.
+
+	if(!key) {
+		var id = Math.floor(Math.random()*100000001);
+	}else{
+		//Set the id to the existing key that is being edited so that it will save over the data.
+		//The key is the same key that's been passed along from the editSubmit event handler.
+		//to the validate function, and then passed here, into the storeData function.
+		id = key;
+	}
+	
         //Gathering all form values, storing into an object
         // Object contains array with the form label and input value
         getSelectedRadio();
@@ -78,7 +90,7 @@ window.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem(id, JSON.stringify(item));
         alert("Chore Saved!");
             
-    }    
+    }
     
     function getData() {
         //write data from local storage
@@ -99,7 +111,8 @@ window.addEventListener("DOMContentLoaded", function() {
 	a('items').style.display = 'block';
         for (var i=0, len=localStorage.length; i<len; i++) {
             var makeli = document.createElement('li');
-	    makeli.setAttribute("class", "eachChore")
+	    var linksLi = document.createElement('li');
+	    makeli.setAttribute("class", "eachChore");
             makeList.appendChild(makeli);
             var key = localStorage.key(i);
             var value = localStorage.getItem(key);
@@ -113,9 +126,75 @@ window.addEventListener("DOMContentLoaded", function() {
                 makeSubList.appendChild(makeSubli);
                 var optSubText = object[n][0] + " " +object[n][1];
                 makeSubli.innerHTML = optSubText;
+		makeSubList.appendChild(linksLi);
             }
-            
+	    makeItemLinks(localStorage.key(i), linksLi); // Create the edit and delete buttons/links for each item in local storage
         }
+    }
+    
+    // Create edit and delete links for each stored item when displayed
+    function makeItemLinks(key, linksLi) {
+	//add edit single item link
+	var editLink = document.createElement('a');
+	editLink.href = '#';
+	editLink.key = key;
+	var editText = "Edit Chore";
+	editLink.setAttribute("class", "editLink");
+	editLink.addEventListener('click', editItem);
+	editLink.innerHTML = editText;
+	linksLi.appendChild(editLink);
+	
+	//add line break
+	//var breakTag = document.createElement('br');
+	//linksLi.appendChild(breakTag);
+	
+	// delete Link
+	var deleteLink = document.createElement('a');
+	deleteLink.href = "#";
+	deleteLink.key = key;
+	var deleteText = "Delete Chore";
+	deleteLink.setAttribute("class", "deleteLink");
+	//deleteLink.addEventListener('click', deleteItem);
+	deleteLink.innerHTML = deleteText;
+	linksLi.appendChild(deleteLink);
+	
+    }
+    
+    function editItem() {
+	// Getting data from local storage
+	var value = localStorage.getItem(this.key);
+	var item = JSON.parse(value);
+	
+	// Show data in form
+	toggleControls('off');
+	
+	// populating the form with data from local storage
+	a('choretype').value = item.choretype[1];
+	a('chorename').value = item.chorename[1];
+	a('finishby').value = item.finishby[1];
+	var radios = document.forms[0].urgency;
+	for(var i=0; i<radios.length; i++) {
+		if(radios[i].value == "Yes" && item.urgency[1] == "Yes") {
+			radios[i].setAttribute("checked", "checked");
+		}else if(radios[i].value === "No" && item.urgency[1] == "No") {
+			radios[i].setAttribute("checked", "checked");
+		}else if(radios[i].value === "Somewhat" && item.urgency[1] == "Somewhat") {
+			radios[i].setAttrubute("checked", "checked");
+		}
+	}
+	
+	a('difficulty').value = item.difficulty[1];
+	a('chorenotes').value = item.chorenotes[1];
+	
+	//remove the initial listener from the input submitButton
+	submitButton.removeEventListener("click", storeData);
+	//change submitButton value to Edit button
+	a('submitButton').value = "Edit Chore";
+	var editSubmit = a('submitButton');
+	// save key value established in this function as a property of the editSubmit event
+	// so we can use that value when we save the data we edited.
+	editSubmit.addEventListener("click", validate);
+	editSubmit.key = this.key;
     }
     
     function clearLocal() {
@@ -128,20 +207,61 @@ window.addEventListener("DOMContentLoaded", function() {
 		return false;
 	}
     }
-        
+    var errMsg = a('errors');
+    function validate(e) {
+	// Defining elements to validate
+	var getChoreType = a('choretype');
+	var getChoreName = a('chorename');
+	var getFinishBy  = a('finishby');
+	
+	//reset error messages
+	errMsg.innerHTML = "";
+	getChoreName.style.border = "1px solid black";
+	getFinishBy.style.border = "1px solid black";
+
 	
 	
-	/*ct = a('choretype'),
-        cn = a('chorename'),
-        urg= a('urgent'),
-        fin= a('finishby'),
-        dif= a('difficulty'),
-        notes= a('chorenotes');*/
+	//Get Error messages for empty required field
+	var messageArray = [];
+	
+	//Chore Type validation
+	if(getChoreType.value === "Select Chore Type") {
+		var typeError = "Please choose a chore type.";
+		getChoreType.style.border = "1px solid red";
+		messageArray.push(typeError);
+	}
+	
+	//Chore Name Validation
+	if(getChoreName.value === "") {
+		var choreNameError = "Please enter a chore name";
+		getChoreName.style.border = "1px solid red";
+		messageArray.push(choreNameError);
+	}
+	
+	//Finish By Validation
+	if(getFinishBy.value === "") {
+		var finishByError = "Please enter a finish date";
+		getFinishBy.style.border = "1px solid red";
+		messageArray.push(finishByError);
+	}
+	
+	// Display errors if any on the screen.
+	if(messageArray.length >=1) {
+		for(var i=0, j= messageArray.length; i<j; i++) {
+			var text = document.createElement('li');
+			text.innerHTML = messageArray[i];
+			errMsg.appendChild(text);
+		}
+		e.preventDefault();
+		return false;
+	}else{
+		storeData(this.key);
+	}
+	
+    }
     
     // function calls
     makeType();
-    
-    
     
     // Button Action functions
     var displayButton = a('displayButton');
@@ -151,6 +271,8 @@ window.addEventListener("DOMContentLoaded", function() {
     clearButton.addEventListener("click", clearLocal);
     
     var submitButton = a('submitButton');
-    submitButton.addEventListener("click", storeData);
+    submitButton.addEventListener("click", validate);
+    
+    
     
 });

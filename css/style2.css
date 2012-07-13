@@ -109,14 +109,12 @@ select {
 }	
 
 ul {
-        font-weight: normal;
 	color: #005;
 	line-height: 200%;
 }
 
 label {
-	display:block;
-        font-weight:bold;	
+	display:block;	
 }
 
 
@@ -257,3 +255,42 @@ li.eachChore {
 	color:#005;
 	border:#005 solid 3px;
 }
+
+a.editLink {
+        display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 15px;
+	margin-top: 2px;
+	padding: 5px;
+	background-image:url(../img/buttonbkg.png);
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-decoration:none;
+	color:#eee;
+	border:#0F9 solid 5px;
+	text-align: center;
+        text-transform: uppercase;
+	text-shadow: #005 1px 2px 3px;
+}
+a.deleteLink {
+        display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 15px;
+	margin-top: 2px;
+	padding: 5px;
+	background-image:url(../img/buttonbkg.png);
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-decoration:none;
+	color:#eee;
+	border:#0F9 solid 5px;
+	text-align: center;
+        text-transform: uppercase;
+	text-shadow: #005 1px 2px 3px;
+}
+
+
