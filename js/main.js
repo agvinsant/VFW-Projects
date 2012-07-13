@@ -4,9 +4,7 @@
 // Activity 3
 
 window.addEventListener("DOMContentLoaded", function() {
-    
-     
-     
+
      // id variables
     var opt= ["Select Chore Type", "Inside Job", "Outside Job", "Errand Run"],
         urgencyValue;
@@ -45,27 +43,27 @@ window.addEventListener("DOMContentLoaded", function() {
             }
         }
     }
+    
     // toggle function that when displayButton is clicked, tells what to display when on and off.
     // On shows list form, and hides display button. Home and Clear buttons are built into the HTML.
     // Off means that the additem form is showing.
     function toggleControls(n) {
-		switch(n) {
-			case "on":
-				a('choreForm').style.display = "none";
-				a('displayButton').style.display = "none";
-				break;
-			case "off":
-				a('choreForm').style.display = "block";
-				a('items').style.display = 'none';
-				break;
-			default:
-				return false;
+	switch(n) {
+		case "on":
+		        a('choreForm').style.display = "none";
+			a('displayButton').style.display = "none";
+			break;
+		case "off":
+			a('choreForm').style.display = "block";
+			a('items').style.display = 'none';
+			break;
+		default:
+			return false;
 		}
      }
     
     function storeData(key) {
         // If no key, this is a new item and need new key.
-
 	if(!key) {
 		var id = Math.floor(Math.random()*100000001);
 	}else{
@@ -90,9 +88,9 @@ window.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem(id, JSON.stringify(item));
         alert("Chore Saved!");
             
-    }
+     }
     
-    function getData() {
+  function getData() {
         //write data from local storage
 	// call the toggleControls function
 	toggleControls("on");
@@ -239,22 +237,22 @@ window.addEventListener("DOMContentLoaded", function() {
 	
 	//Chore Type validation
 	if(getChoreType.value === "Select Chore Type") {
-		var typeError = "Please choose a chore type.";
-		getChoreType.style.border = "1px solid red";
+		var typeError = "!!!Please choose a chore type!!!";
+		getChoreType.style.border = "3px solid red";
 		messageArray.push(typeError);
 	}
 	
 	//Chore Name Validation
 	if(getChoreName.value === "") {
-		var choreNameError = "Please enter a chore name";
-		getChoreName.style.border = "1px solid red";
+		var choreNameError = "!!!Please enter a chore name!!!";
+		getChoreName.style.border = "3px solid red";
 		messageArray.push(choreNameError);
 	}
 	
 	//Finish By Validation
 	if(getFinishBy.value === "") {
-		var finishByError = "Please enter a finish date";
-		getFinishBy.style.border = "1px solid red";
+		var finishByError = "!!!Please enter a finish date!!!";
+		getFinishBy.style.border = "3px solid red";
 		messageArray.push(finishByError);
 	}
 	

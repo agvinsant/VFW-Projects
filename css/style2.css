@@ -234,7 +234,7 @@ ul.choreList {
 	padding:5px;
 	background-image:url(../img/honeydobkg.png);
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
+	font-size:12px;
 	text-decoration:none;
 	color:#005;
 	border:#005 solid 3px;
@@ -250,7 +250,7 @@ li.eachChore {
 	padding:5px;
 	background-image:url(../img/honeydobkg.png);
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
+	font-size:12px;
 	text-decoration:none;
 	color:#005;
 	border:#005 solid 3px;
