@@ -17,7 +17,7 @@ header {
 	border-radius: 15px;
 }
 
-h1 {
+h1, h2 {
 	display:block;
 	margin-left:5px;
 	margin-right:5px;
@@ -35,32 +35,8 @@ h1 {
 	text-align: center;	
 }
 
-h2 {
-        display:block;
-	margin-left:5px;
-	margin-right:5px;
-        margin-top:15px;
-	outline:none;
-	border-radius: 15px;
-	padding:5px;
-	background-image:url(../img/honeydobkg.png);
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
+a.clear, a.index {
 	text-decoration:none;
-	color:#005;
-	text-shadow:#eee 2px 3px 4px;
-	border:#330099 solid 3px;
-	text-align: center;		
-}
-
-a.clear {
-	text-decoration:none;
-}
-
-
-a.index {
-	color:#005;
-	text-decoration:none;	
 }
 
 form {
@@ -111,35 +87,21 @@ select {
 ul {
 	color: #005;
 	line-height: 200%;
+        list-style-type: none;
 }
 
 label {
 	display:block;	
 }
 
-
-input.chorename {
+input.chorename, input.finishby, textarea.chorenotes  {
 		border-radius: 10px;
 		width:90%;
+                margin-right: 10px;
 }
 
-input.finishby {
-		border-radius: 10px;
-		width:100%;
-}
-
-label.choretype {
-	color: #005;
-	
-}
-
-textarea.chorenotes {
-		border-radius: 10px;
-		width:90%;
-}
-
-p {
-	color:#005;
+p, label.choretype {
+	color: #005;	
 }
 
 span {
@@ -154,49 +116,11 @@ textarea {
 	display:block;
 }
 
-input.submit {
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	outline:none;
-	border-radius: 15px;
-	margin-top: 5px;
-	padding: 20px;
-	background-image:url(../img/buttonbkg.png);
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
-	text-decoration:none;
-	color:#eee;
-	border:#0F9 solid 5px;
-	text-align: center;
-	width:100%;
-        text-transform: uppercase;
-	text-shadow: #005 1px 2px 3px;
+input.submit, input.reset {
+	width: 100%;
 }
 
-
-input.reset {
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	outline:none;
-	border-radius: 15px;
-	margin-top: 5px;
-	padding: 20px;
-	background-image:url(../img/buttonbkg.png);
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
-	text-decoration:none;
-	color:#eee;
-	border:#0F9 solid 5px;
-	text-align: center;
-	width:100%;
-        text-transform: uppercase;
-	text-shadow: #005 1px 2px 3px;
-}
-
-
-a.display {
+a.display, input.submit, input.reset {
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
@@ -224,7 +148,7 @@ div {
 	border-radius: 15px;
 }
 
-ul.choreList {
+ul.choreList, li.eachChore {
         display:block;
 	margin-left:auto;
 	margin-right:auto;
@@ -239,42 +163,7 @@ ul.choreList {
 	color:#005;
 	border:#005 solid 3px;
 }
-
-li.eachChore {
-        display:block;
-	margin-left:auto;
-	margin-right:auto;
-	outline:none;
-	border-radius: 15px;
-	margin: 5px;
-	padding:5px;
-	background-image:url(../img/honeydobkg.png);
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
-	text-decoration:none;
-	color:#005;
-	border:#005 solid 3px;
-}
-
-a.editLink {
-        display:block;
-	margin-left:auto;
-	margin-right:auto;
-	outline:none;
-	border-radius: 15px;
-	margin-top: 2px;
-	padding: 5px;
-	background-image:url(../img/buttonbkg.png);
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:14px;
-	text-decoration:none;
-	color:#eee;
-	border:#0F9 solid 5px;
-	text-align: center;
-        text-transform: uppercase;
-	text-shadow: #005 1px 2px 3px;
-}
-a.deleteLink {
+a.editLink, a.deleteLink {
         display:block;
 	margin-left:auto;
 	margin-right:auto;
