@@ -24,10 +24,10 @@ h1, h2 {
         margin-top:15px;
 	outline:none;
 	border-radius: 15px;
-	padding:5px;
+	padding: 2px;
 	background-image:url(../img/honeydobkg.png);
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
+	font-size:18px;
 	text-decoration:none;
 	color:#005;
 	text-shadow:#eee 2px 3px 4px;
@@ -35,13 +35,13 @@ h1, h2 {
 	text-align: center;	
 }
 
-a.clear, a.index {
+a.clear, a.index, a.home {
 	text-decoration:none;
 }
 
 form {
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:18px;
+	font-size:14px;
 	padding: 10px;
 	margin: 5px;
 	border:solid 3px #330099;
@@ -68,10 +68,10 @@ legend {
 	margin-right:auto;
 	outline:none;
 	border-radius: 15px;
-	padding: 20px;
+	padding: 10px;
 	background-image:url(../img/buttonbkg.png);
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
+	font-size:18px;
 	text-decoration:none;
 	color:#eee;
 	border:#0F9 solid 5px;
@@ -127,7 +127,7 @@ a.display, input.submit, input.reset {
 	outline:none;
 	border-radius: 15px;
 	margin-top: 5px;
-	padding: 20px;
+	padding: 10px;
 	background-image:url(../img/buttonbkg.png);
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:20px;
@@ -170,13 +170,12 @@ a.editLink, a.deleteLink {
 	outline:none;
 	border-radius: 15px;
 	margin-top: 2px;
-	padding: 5px;
+	padding: 2px;
 	background-image:url(../img/buttonbkg.png);
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:14px;
 	text-decoration:none;
 	color:#eee;
-	border:#0F9 solid 5px;
 	text-align: center;
         text-transform: uppercase;
 	text-shadow: #005 1px 2px 3px;

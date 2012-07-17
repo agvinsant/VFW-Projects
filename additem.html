@@ -25,6 +25,7 @@
 		<!-- Page body content goes here -->
 		<header>
 		    <!-- I built in a link or home button for myself inside the header to switch back and forth to the index page without having to create a home button --> 
+		    <a href="index.html" id="home" class="home"><h1>Home</h1></a>
 		    <a href="additem.html" id="index" class="index"><h1>Add New Chore</h1></a>
 		    <a href="#" class="clear" id="clearButton"><h2>Clear All Chores</h2></a>
 		</header>
@@ -32,8 +33,6 @@
 		 
 		<form method="post" action="#" id="choreForm"> 
 			<a class="display" href="#" id="displayButton">Display All Chores</a>
-			
-			<a href="additem.html" class="addNew" id="addNew" style="display: none;">Add New Chores</a>
 			<br/>
 			<fieldset>  
 				<legend>Add A Chore</legend>
@@ -67,6 +66,7 @@
 			<!-- hidden tags, really don't know what to put, I just know it was a requirement :) -->
 			<input type="hidden" value="true"/> 
 		</form>
+		<script src=js/json.js type="text/javascript"></script>
 		<script src=js/main.js type="text/javascript"></script>
 	</body>
 </html>
