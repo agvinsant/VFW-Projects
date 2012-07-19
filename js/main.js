@@ -6,7 +6,7 @@
 window.addEventListener("DOMContentLoaded", function() {
 
      // id variables
-    var opt= ["Select Chore Type", "Inside Job", "Outside Job", "Errand Run"],  //For New App...Change this to fit to new HTML
+    var opt= ["Select Chore Type", "Inside", "Outside", "Errand"],  //For New App...Change this to fit to new HTML
         urgencyValue;
 	
         
@@ -96,8 +96,9 @@ window.addEventListener("DOMContentLoaded", function() {
 	toggleControls("on");
 	// tells function if the data is empty then you will be alerted and will revert back to form with display button missing
 	if(localStorage.length === 0) {
-		alert('There are no chores at this time.');		//change to fit form type
-		toggleControls("off");
+		alert('There are no chores at this time so default data was added.');		//change to fit form type
+		//toggleControls("off");
+		autoFillData(); //delete this for working model. uncomment toggleControls function above.
 	}
 	// adding elements into HTML and displaying from JS
         var makeDiv = document.createElement('div');
@@ -119,6 +120,7 @@ window.addEventListener("DOMContentLoaded", function() {
             var object = JSON.parse(value);
             var makeSubList = document.createElement('ul');
             makeli.appendChild(makeSubList);
+	    getImage(object.choretype[1], makeSubList);
             for(var n in object) {
                 var makeSubli = document.createElement('li');
                 makeSubList.appendChild(makeSubli);
@@ -129,6 +131,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	    makeItemLinks(localStorage.key(i), linksLi); // Create the edit and delete buttons/links for each item in local storage
         }
     }
+    
     
     // Create edit and delete links for each stored item when displayed
     function makeItemLinks(key, linksLi) {
@@ -217,8 +220,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		return false;
 	}
     }
-    var errMsg = a('errors');
-    errMsg.setAttribute("class", "errMsg");
+    
     function validate(e) {
 	// Defining elements to validate
 	var getChoreType = a('choretype');	//change var's and id's to fit form type
@@ -271,8 +273,29 @@ window.addEventListener("DOMContentLoaded", function() {
 	
     }
     
+    //Get image for catagory being displayed
+    function getImage(typeName, makeSubList) {
+	var imageLi = document.createElement('li');
+	makeSubList.appendChild(imageLi);
+	var newImage = document.createElement('img');
+	var setSrc = newImage.setAttribute("src","img/" + typeName + ".png");
+	imageLi.appendChild(newImage);
+	
+    }
+    
+    function autoFillData(){  //delete this function in working model
+	for(var n in json){
+		var id = Math.floor(Math.random()*100000001);
+		localStorage.setItem(id,JSON.stringify(json[n]));
+	}
+    }
+    
+    
+    
     // function calls
     makeType();
+    var errMsg = a('errors');
+    errMsg.setAttribute('class', 'errMsg');
     
     // Button Action functions
     var displayButton = a('displayButton');
