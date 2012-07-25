@@ -11,31 +11,14 @@ html {
 }
 
 header {
-	margin: 5px;
+	padding: 10px;
+        margin: 5px;
 	background-image:url(../img/gradient1.png);
 	border:solid 3px #330099;
 	border-radius: 15px;
 }
 
-h1, h2 {
-	display:block;
-	margin-left:5px;
-	margin-right:5px;
-        margin-top:15px;
-	outline:none;
-	border-radius: 15px;
-	padding: 2px;
-	background-image:url(../img/honeydobkg.png);
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:18px;
-	text-decoration:none;
-	color:#005;
-	text-shadow:#eee 2px 3px 4px;
-	border:#330099 solid 3px;
-	text-align: center;	
-}
-
-a.clear, a.index, a.home {
+a.clear, a.index, a.home, a.search {
 	text-decoration:none;
 }
 
@@ -80,7 +63,7 @@ legend {
 
 select {
 	border-radius:15px;
-	width: 100%;
+	width: 90%;
 }	
 
 ul {
@@ -119,8 +102,8 @@ input.submit, input.reset {
 	width: 100%;
 }
 
-a.display, input.submit, input.reset {
-	display:block;
+a.display, input.submit, input.reset, a.clear, a.index, a.home, a.search, input.searchButton {
+        display:block;
 	margin-left:auto;
 	margin-right:auto;
 	outline:none;

@@ -308,5 +308,4 @@ window.addEventListener("DOMContentLoaded", function() {
     submitButton.addEventListener("click", validate);
     
     
-    
 });
