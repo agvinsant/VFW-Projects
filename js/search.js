@@ -1,3 +1,5 @@
+window.addEventListener("DOMContentLoaded", function() {
+
 // getElementById Function
     function a(x) {
         var theElement = document.getElementById(x);
@@ -13,7 +15,7 @@
 	var term = a('search').value;
 	
 	//Search by Type or Category Only
-	if(type !=="Select Chore Type" && term === ""){
+	if(type != "Select Chore Type" && term === ""){
 		for(i=0, j=localStorage.length; i<j; i++){
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
@@ -27,22 +29,22 @@
 	}
 	
 	//Search by Term Only
-	if(term !== "" && type === "Select Chore Type"){
+	if(term != "" && type === "Select Chore Type"){
 	    for(i=0, j=localStorage.length; i<j; i++){
-			var key = localStorage.key(i);
-			var value = localStorage.getItem(key);
-			var object = JSON.parse(value);
-			for(n in object){
-				if(term === object[n][1]){
-					for(q in object){
-						console.log(object[q][1]);
-					}
-				}
+		var key = localStorage.key(i);
+		var value = localStorage.getItem(key);
+		var object = JSON.parse(value);
+		for(n in object){
+		    if(term === object[n][1]){
+			for(q in object){
+			    console.log(object[q][1]);
 			}
+		    }
 		}
+	    }
 	}
 	//Search by Both Type AND Term
-	if(term !=="" && type !== "Select Chore Type"){
+	if(term != "" && type !== "Select Chore Type"){
 	    for(i=0, j= localStorage.length; i<j; i++){
 		var key = localStorage.key(i);
 		var value = localStorage.getItem(key);
@@ -58,3 +60,5 @@
 	}
     };
     search.addEventListener("click", getSearch);
+    
+});

@@ -11,10 +11,34 @@ html {
 }
 
 header {
+	margin: 5px;
+	background-image:url(../img/gradient1.png);
+	border:solid 2px #330099;
+	border-radius: 15px;
+}
+
+h1 {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	outline:none;
+	border-radius: 10px;
+	margin: 5px;
+	padding:5px;
+	background-image:url(../img/honeydobkg.png);
+        font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-decoration:none;
+	color:#005;
+	text-shadow:#0F9 2px 3px 4px;
+	border:#330099 solid 2px;
+	text-align: center;
+}
+nav {
 	padding: 10px;
         margin: 5px;
 	background-image:url(../img/gradient1.png);
-	border:solid 3px #330099;
+	border:solid 2px #330099;
 	border-radius: 15px;
 }
 
@@ -27,7 +51,7 @@ form {
 	font-size:14px;
 	padding: 10px;
 	margin: 5px;
-	border:solid 3px #330099;
+	border:solid 2px #330099;
 	border-radius: 15px;
 	background-image: url(../img/gradient2.png);
 }
@@ -35,7 +59,7 @@ form {
 fieldset {
 	
 	padding: 10px;
-	border:#330099 solid 5px;
+	border:#330099 solid 2px;
 	background-image:url(../img/honeydobkg.png);	
 }
 
@@ -54,10 +78,10 @@ legend {
 	padding: 10px;
 	background-image:url(../img/buttonbkg.png);
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:18px;
+	font-size:16px;
 	text-decoration:none;
 	color:#eee;
-	border:#0F9 solid 5px;
+	border:#0F9 solid 2px;
 	text-align: center;		
 }
 
@@ -109,13 +133,13 @@ a.display, input.submit, input.reset, a.clear, a.index, a.home, a.search, input.
 	outline:none;
 	border-radius: 15px;
 	margin-top: 5px;
-	padding: 10px;
+	padding: 5px;
 	background-image:url(../img/buttonbkg.png);
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:20px;
+	font-size:16px;
 	text-decoration:none;
 	color:#eee;
-	border:#0F9 solid 5px;
+	border:#0F9 solid 2px;
 	text-align: center;
         text-transform: uppercase;
 	text-shadow: #005 1px 2px 3px;

@@ -14,8 +14,8 @@ html {
 header {
 	margin: 5px;
 	background-image:url(../img/gradient1.png);
-	border:solid 3px #330099;
-	border-radius: 15px;
+	border:solid 2px #330099;
+	border-radius: 10px;
 }
 
 h1 {
@@ -23,16 +23,16 @@ h1 {
 	margin-left:auto;
 	margin-right:auto;
 	outline:none;
-	border-radius: 15px;
+	border-radius: 10px;
 	margin: 5px;
-	padding:10px;
+	padding:5px;
 	background-image:url(../img/honeydobkg.png);
         font-family:Arial, Helvetica, sans-serif;
 	font-size:18px;
 	text-decoration:none;
 	color:#005;
 	text-shadow:#0F9 2px 3px 4px;
-	border:#330099 solid 3px;
+	border:#330099 solid 2px;
 	text-align: center;
 }
 
@@ -63,7 +63,7 @@ span {
 	font-size:20px;
 	text-decoration:none;
 	color:#005;
-	border:#330099 solid 3px;
+	border:#330099 solid 2px;
 }
 
 p {
@@ -75,7 +75,7 @@ p {
 }
 
 div {
-	border:solid #330099 3px;
+	border:solid #330099 2px;
 	margin: 5px;
 	padding: 20px;	
 	background-image:url(../img/gradient2.png);
@@ -90,7 +90,7 @@ a.addchore {
 	outline:none;
 	border-radius: 15px;
 	margin-top: 15px;
-	padding: 10px;
+	padding: 5px;
 	background-image:url(../img/buttonbkg.png);
         background-size: auto;
 	font-family: Arial, Helvetica, sans-serif;
@@ -98,6 +98,6 @@ a.addchore {
 	text-decoration:none;
         text-shadow:#330099 2px 3px 4px;
 	color:#eee;
-	border:#0F9 solid 5px;
+	border:#0F9 solid 2px;
 	text-align: center;
 }
